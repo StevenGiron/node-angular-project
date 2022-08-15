@@ -22,9 +22,7 @@ export class ArticulosService {
     return this.http.get<Articulo[]>(`${environment.endpoint}/noticias`)
   }
 
-  getArticulosTitle(title:any): Observable<Articulo>{   
-    console.log(`${environment.endpoint}/noticias/${title.trim()}`);
-    
+  getArticulosTitle(title:any): Observable<Articulo>{       
     return this.http.get<Articulo>(`${environment.endpoint}/noticias/${title.trim()}`)
   }
 }

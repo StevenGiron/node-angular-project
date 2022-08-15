@@ -12,6 +12,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { VerComponent } from './components/ver/ver.component';
 import { AuthModule } from '../../auth/auth.module';
+import { CoreModule } from '../../core/core/core.module';
 
 
 
@@ -31,7 +32,8 @@ import { AuthModule } from '../../auth/auth.module';
     ArticuloRoutingModule,
     SharedModule,
     FlexLayoutModule, 
-    AuthModule
+    AuthModule,
+    CoreModule
   ]
 })
 export class ArticuloModule { }

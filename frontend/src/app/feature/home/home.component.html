@@ -2,20 +2,20 @@
     <div>
         <br>
         <span class="p-float-label">
-            <input id="float-input" type="text" pInputText > 
+            <input id="float-input" type="text" pInputText [(ngModel)]="username" > 
             <label for="float-input">Usuario</label>
         </span>
 
         <br>
 
         <span class="p-float-label">
-            <input id="float-input" type="text" pInputText > 
+            <input id="float-input" type="text" pInputText [(ngModel)]="password"> 
             <label for="float-input">Contraseña</label>
         </span>
 
         <br>
         <div fxLayoutAlign="center">
-            <button pButton type="button" label="Submit"></button>
+            <button pButton type="button" (click)="ingresar()" label="Submit"></button>
         </div>
     </div>
 </div>

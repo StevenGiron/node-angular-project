@@ -14,7 +14,7 @@ export class HomeService {
     private http: HttpClient
   ) { }
 
-  getUsuarios(): Observable<Usuario[]>{       
-    return this.http.get<Usuario[]>(`${environment.endpoint}/usuarios}`)
+  getUsuarios(): Observable<Usuario[]>{          
+    return this.http.get<Usuario[]>(`${environment.endpoint}/usuarios`)
   }
 }

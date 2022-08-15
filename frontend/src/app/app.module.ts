@@ -7,6 +7,8 @@ import { HomeComponent } from './feature/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CoreModule } from './core/core/core.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -19,13 +21,16 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HomeComponent,
     
     
+    
+    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     CoreModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule
     
   ],
   providers: [],
